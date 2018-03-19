@@ -1,9 +1,6 @@
 var mongoose = require('mongoose');
 var bcrypt = require('bcryptjs');
 
-mongoose.connect('mongodb://localhost:27017/masterpass');
-
-var db = mongoose.connection;
 
 // User Schema
 var UserSchema = mongoose.Schema({
