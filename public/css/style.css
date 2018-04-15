@@ -15,26 +15,36 @@ body {
 /* Custom page header */
 .header {
   padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 4px solid #0085CA;
 }
+
+.header img {
+  float: left;
+  padding-right: 2px;
+  margin-left: 40px;
+  width: 40px;
+  height: 55px;
+}
+
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 40px;
+  line-height: 70px;
 }
 
 /* Custom page footer */
 .footer {
   padding-top: 19px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
+  border-top: 2px solid #0085CA;
+  margin-top: 400px;
 }
 
 /* Customize container */
 @media (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 1920px;
   }
 }
 .container-narrow > hr {
@@ -80,6 +90,8 @@ body {
 
 .page-header{
   margin-top:0;
+  margin-left: 400px;
+  margin-bottom: 50px;
 }
 
 footer{
@@ -89,7 +101,7 @@ footer{
 .nav-pills > li{
   padding-left:30px;
   padding-right:30px;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 body {
@@ -107,7 +119,6 @@ section {
   padding: 10px;
   margin: 30px;
   width: 300px;
-  box-shadow: 3px 3px 1px #34495e;
   min-height: 400px;
 }
 
@@ -120,12 +131,12 @@ section:last-of-type {
 }
 
 section h3 {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid;
   padding-bottom: 5px;
 }
 
 .insert {
-  background: #2ecc71;
+  background: #ecf0f1;
 }
 
 .get {
@@ -133,12 +144,12 @@ section h3 {
 }
 
 .update {
-  background: #3498db;
+  background: #ecf0f1;
   margin-left: 0px;
 }
 
 .delete {
-  background: #e74c3c;
+  background: #ecf0f1;
 }
 
 .input label {
@@ -168,6 +179,6 @@ button:hover {
 .item {
   margin: 10px 0;
   padding: 5px;
-  background: #95a5a6;
-  border: 1px solid black;
+  background: #95a5a642;
+
 }

@@ -23,6 +23,7 @@ function ensureAuthenticated(req, res, next) {
     }
 }
 
+
 /* Getting users password data */
 router.get('/get-data', function (req, res) {
     var resultArray = [];
@@ -80,6 +81,7 @@ router.post('/update', function (req, res, next) {
 
 /* Deleting password data */
 router.post('/delete', function (req, res, next) {
+
     var id = req.body.id;
 
     mongo.connect(url, function (err, db) {
