@@ -18,6 +18,10 @@ body {
   border-bottom: 4px solid #0085CA;
 }
 
+.welcome{
+  text-align: center;
+}
+
 .header img {
   float: left;
   padding-right: 2px;
@@ -89,8 +93,8 @@ body {
 }
 
 .page-header{
-  margin-top:0;
-  margin-left: 400px;
+  margin-top:80px;
+  margin-left: 435px;
   margin-bottom: 50px;
 }
 

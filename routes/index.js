@@ -23,8 +23,7 @@ function ensureAuthenticated(req, res, next) {
     }
 }
 
-
-/* Getting users password data */
+/* Getting users social media password data */
 router.get('/get-data', function (req, res) {
     var resultArray = [];
     mongo.connect(url, function (err, db) {
@@ -40,8 +39,9 @@ router.get('/get-data', function (req, res) {
     });
 });
 
-/* Adding new password data */
+/* Adding new social media password data */
 router.post('/insert', function (req, res) {
+
     var item = {
         website: req.body.website,
         username: req.body.username,
@@ -51,7 +51,31 @@ router.post('/insert', function (req, res) {
     mongo.connect(url, function (err, db) {
         assert.equal(null, err);// to check if we have an error
         db.db('masterpass').collection('passwords').insertOne(item, function(err, result) {
-            assert.equal(null, err)  ;
+
+            /*// Nodejs encryption with CTR to encrypt passwords entered by the user
+            var crypto = require('crypto'),
+                algorithm = 'aes-256-ctr',
+                password = 'd6F3Efeq';
+
+            function encrypt(text){
+                var cipher = crypto.createCipher(algorithm,password);
+                var crypted = cipher.update(text,'utf8','hex');
+                crypted += cipher.final('hex');
+                return crypted;
+            }
+
+            function decrypt(item){
+                var decipher = crypto.createDecipher(algorithm,password);
+                var dec = decipher.update(text,'hex','utf8');
+                dec += decipher.final('utf8');
+                return dec;
+            }
+
+            var item = encrypt(item);
+            // outputs hello world
+            console.log(decrypt(item));*/
+
+            assert.equal(null, err);
             console.log('Item inserted');
             db.close();
         });
@@ -59,7 +83,7 @@ router.post('/insert', function (req, res) {
     });
 });
 
-/* Updating password data */
+/* Updating social media password data */
 router.post('/update', function (req, res, next) {
     var item = {
         website: req.body.website,
@@ -79,7 +103,7 @@ router.post('/update', function (req, res, next) {
     });
 });
 
-/* Deleting password data */
+/* Deleting social media password data */
 router.post('/delete', function (req, res, next) {
 
     var id = req.body.id;
