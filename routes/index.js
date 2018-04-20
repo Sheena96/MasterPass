@@ -119,3 +119,22 @@ router.post('/delete', function (req, res, next) {
 });
 
 module.exports = router;
+
+/******* References
+YouTube. (2018). Node.js Login System With Passport - Part 1. [online] Available at: https://www.youtube.com/watch?v=Z1ktxiqyiLA [Accessed 4 Mar. 2018].
+
+YouTube. (2018). Node.js Login System With Passport - Part 2. [online] Available at: https://www.youtube.com/watch?v=OnuC3VtEQks [Accessed 19 Mar. 2018].
+
+YouTube. (2018). Node.js Login System With Passport - Part 3. [online] Available at: https://www.youtube.com/watch?v=iX8UhDOmkPE&t=993s [Accessed 21 Mar. 2018].
+
+npm. (2018). bcryptjs. [online] Available at: https://www.npmjs.com/package/bcryptjs [Accessed 19 Mar. 2018].
+
+Passport.js. (2018). Documentation. [online] Available at: http://www.passportjs.org/docs/ [Accessed 19 Mar. 2018].
+
+YouTube. (2018). Node.js + Express - Tutorial - Insert and Get Data with MongoDB. [online] Available at: https://www.youtube.com/watch?v=ZKwrOXl5TDI&t=142s [Accessed 5 Apr. 2018].
+
+YouTube. (2018). Node.js + Express - Tutorial - Update and Delete Data with MongoDB. [online] Available at: https://www.youtube.com/watch?v=-JcgwLIh0Z4 [Accessed 11 Apr. 2018].
+
+Lollyrock.com. (2018). Encrypt and decrypt content with Nodejs - chris-rock. [online] Available at: http://lollyrock.com/articles/nodejs-encryption/ [Accessed 13 Apr. 2018].
+
+ ********/
